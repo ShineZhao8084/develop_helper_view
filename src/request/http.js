@@ -9,7 +9,7 @@ let instance = axios.create({
 if (process.env.NODE_ENV === 'development') {
     instance.defaults.baseURL = 'http://127.0.0.1/';
 } else if (process.env.NODE_ENV === 'production') {
-    instance.defaults.baseURL = 'http://10.73.241.190:8080/';
+    instance.defaults.baseURL = 'http://10.73.241.190:8090/';
 }
 
 export default instance;
